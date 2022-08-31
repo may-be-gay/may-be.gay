@@ -1,0 +1,151 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#replit-badge,
+#replit-badge:before,
+#replit-badge:after {
+	background: none;
+	border: none;
+}
+
+html, body {
+	font-size: 70%;
+}
+
+body {
+	height: fit-content;
+	margin: 40px auto 0;
+	max-width: 700px;
+	padding: 20px;
+}
+
+@media (max-width: 1300px) {
+	body {
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-size: 5rem;
+	}
+}
+
+.container {
+	margin: initial;
+	max-width: initial;
+	padding: initial;
+}
+
+nav {
+	max-height: 400px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-right: 10px;
+}
+
+nav::-webkit-scrollbar {
+	width: 3px;
+}
+
+nav button {
+	position: fixed;
+	z-index: 20;
+	padding: 20px 20px 5px 20px;
+	margin: -20px;
+}
+
+nav header {
+	color: var(--accent-2);
+	text-align: right;
+	position: fixed;
+	background: var(--background-3);
+	z-index: 10;
+	padding: 20px 20px 5px 20px;
+	margin: 0;
+}
+
+nav ul {
+	align-content: flex-end;
+	justify-content: flex-end;
+	width: initial;
+	margin-top: 65px;
+}
+
+nav ul > li {
+	text-align: right;
+}
+
+nav ul li a,
+nav ul li a:before,
+nav ul li a:after {
+	background: none;
+	border: none;
+	padding: 0;
+	margin: 2px 10px;
+	color: var(--primary-3);
+	text-decoration: underline;
+	text-decoration-thickness: 3px;
+	text-decoration-color: var(--primary-3);
+	transition: color 0.1s ease;
+	transition: text-decoration-color 0.1s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:hover:before,
+nav ul li a:hover:after {
+	background: none;
+	border: none;
+	text-decoration-color: var(--accent-2);
+}
+
+@media (max-width: 1300px) {
+	nav {
+		margin-top: 0;
+	}
+	
+	nav header {
+		display: none;
+	}
+
+	nav ul {
+		align-content: flex-start;
+		justify-content: flex-start;
+	}
+
+	nav ul > li {
+		text-align: left;
+	}
+}
+
+p a,
+p a:before,
+p a:after {
+	background: none;
+	border: none;
+	padding: 0;
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+	text-decoration-color: var(--primary-2);
+	transition: text-decoration-color 0.1s ease;
+}
+
+p a:hover,
+p a:hover:before,
+p a:hover:after {
+	background: none;
+	border: none;
+	text-decoration-color: var(--accent-2);
+}
+
+sup a {
+	text-decoration: none;
+}
+
+blockquote p {
+	margin: 2.5px 0;
+}
+
+footer a:before {
+	transform-origin: 0 11px;
+}
